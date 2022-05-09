@@ -1,0 +1,33 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "article component project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T4R0TARO/article-preview-component.git"
+  },
+  "keywords": [
+    "article",
+    "component",
+    "project"
+  ],
+  "author": "Joshua Manansala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T4R0TARO/article-preview-component/issues"
+  },
+  "homepage": "https://github.com/T4R0TARO/article-preview-component#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0"
+  }
+}
