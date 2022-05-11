@@ -1,1 +1,84 @@
 @use "../variables" as *;
+
+.article__card {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.article__card__img-box {
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.article__card__img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article__card__content {
+  margin-bottom: 35px;
+  padding: 0 30px;
+}
+
+.card__content__h1 {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.card__content__p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: $very-dark-grayish-blue;
+}
+
+.article__card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.avatar__img-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.avatar__info__h2 {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.avatar__info__date {
+  font-size: 14px;
+  color: $desaturated-dark-blue;
+}
+
+.share-button {
+  color: $grayish-blue;
+  padding: 8px;
+  border-radius: 50%;
+  background: $light-grayish-blue;
+}
