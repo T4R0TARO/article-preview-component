@@ -13,7 +13,7 @@ html {
 body {
   min-height: 100vh;
   background: rgb(219, 219, 219);
-  padding: 20px;
+  padding: 100px 20px;
 }
 
 h1,
@@ -68,7 +68,7 @@ button {
 }
 
 .article__card__content {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 0 30px;
 }
 
@@ -89,7 +89,8 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .avatar {
@@ -121,11 +122,49 @@ button {
   color: hsl(214deg, 17%, 51%);
 }
 
+.share {
+  position: static;
+  z-index: 1;
+}
+
 .share-button {
   color: hsl(212deg, 23%, 69%);
-  padding: 8px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   background: hsl(210deg, 46%, 95%);
+}
+
+.share__socials {
+  background: hsl(217deg, 19%, 35%);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 80px;
+  padding: 10px 30px;
+  bottom: 100%;
+  left: 50%;
+  gap: 18px;
+  z-index: -1;
+  inset: -16px 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  visibility: hidden;
+}
+.share__socials a i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.share__socials--active {
+  transform: scale(1);
+}
+
+.share__title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  color: hsl(212deg, 23%, 69%);
 }
 
 /*# sourceMappingURL=styles.css.map */
