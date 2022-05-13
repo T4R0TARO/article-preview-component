@@ -13,8 +13,11 @@ html {
 body {
   min-height: 100vh;
   background: rgb(219, 219, 219);
-  margin: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 0 30px;
 }
 
 h1,

@@ -13,8 +13,11 @@ html {
 body {
   min-height: 100vh;
   background: rgb(219, 219, 219);
-  margin: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 0 30px;
 }
 
 h1,
@@ -52,6 +55,7 @@ button {
   grid-template-rows: 1fr;
   background-color: #fff;
   border-radius: 12px;
+  max-width: 900px;
 }
 
 .article__card__img-box {
