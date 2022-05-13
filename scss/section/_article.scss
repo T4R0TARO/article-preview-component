@@ -8,7 +8,7 @@
 }
 
 .article__card__img-box {
-  height: 200px;
+  height: 220px;
   overflow: hidden;
   margin-bottom: 40px;
   border-top-left-radius: 12px;
@@ -22,7 +22,7 @@
 }
 
 .article__card__content {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 0 30px;
 }
 
@@ -36,14 +36,13 @@
   font-size: 15px;
   line-height: 1.5;
   color: $very-dark-grayish-blue;
+  margin-bottom: 25px;
 }
 
 .article__card__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
-  margin-bottom: 15px;
   position: relative;
 }
 
@@ -91,18 +90,15 @@
 }
 
 .share__socials {
-  // 9:07
   background: $very-dark-grayish-blue;
   display: flex;
   position: absolute;
   align-items: center;
   height: 80px;
   padding: 10px 30px;
-  bottom: 100%;
-  left: 50%;
   gap: 18px;
   z-index: -1;
-  inset: -16px 0;
+  inset: -14px -30px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   visibility: hidden;
@@ -115,7 +111,7 @@
 }
 
 .share__socials--active {
-  // visibility: visible;
+  visibility: visible;
   transform: scale(1);
 }
 
@@ -124,4 +120,49 @@
   letter-spacing: 5px;
   font-size: 16px;
   color: $grayish-blue;
+}
+
+@media (min-width: 868px) {
+  .article__card {
+    grid-template-columns: 280px minmax(100px, 630px);
+    gap: 30px;
+  }
+
+  .article__card__img-box {
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+
+  .article__card__content {
+    padding: 35px 30px;
+  }
+
+  .share__socials {
+    height: 40px;
+    width: 240px;
+    z-index: 0;
+    border-radius: 10px;
+    left: 71%;
+    top: -100%;
+    transition: all 0.25s ease;
+    a {
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .share__socials::after {
+    content: "";
+    background: $very-dark-grayish-blue;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(45deg);
+  }
 }
