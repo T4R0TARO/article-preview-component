@@ -13,8 +13,11 @@ html {
 body {
   min-height: 100vh;
   background: rgb(219, 219, 219);
-  margin: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 0 30px;
 }
 
 h1,
@@ -52,6 +55,7 @@ button {
   grid-template-rows: 1fr;
   background-color: #fff;
   border-radius: 12px;
+  max-width: 300px;
 }
 
 .article__card__img-box {
@@ -169,7 +173,8 @@ button {
 @media (min-width: 868px) {
   .article__card {
     grid-template-columns: 280px minmax(100px, 630px);
-    gap: 30px;
+    gap: 25px;
+    max-width: 730px;
   }
 
   .article__card__img-box {
@@ -189,7 +194,7 @@ button {
     width: 240px;
     z-index: 0;
     border-radius: 10px;
-    left: 71%;
+    left: 63%;
     top: -100%;
     transition: all 0.25s ease;
   }
