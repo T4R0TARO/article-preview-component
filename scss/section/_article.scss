@@ -5,7 +5,7 @@
   grid-template-rows: 1fr;
   background-color: #fff;
   border-radius: 12px;
-  max-width: 900px;
+  max-width: 300px;
 }
 
 .article__card__img-box {
@@ -126,7 +126,8 @@
 @media (min-width: 868px) {
   .article__card {
     grid-template-columns: 280px minmax(100px, 630px);
-    gap: 30px;
+    gap: 25px;
+    max-width: 730px;
   }
 
   .article__card__img-box {
@@ -146,7 +147,7 @@
     width: 240px;
     z-index: 0;
     border-radius: 10px;
-    left: 71%;
+    left: 63%;
     top: -100%;
     transition: all 0.25s ease;
     a {
