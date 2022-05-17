@@ -5,7 +5,8 @@
   grid-template-rows: 1fr;
   background-color: #fff;
   border-radius: 12px;
-  max-width: 300px;
+  max-width: 330px;
+  // box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .article__card__img-box {
@@ -29,15 +30,15 @@
 
 .card__content__h1 {
   margin-bottom: 20px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
 .card__content__p {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.5;
   color: $very-dark-grayish-blue;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .article__card__footer {
@@ -55,8 +56,8 @@
 }
 
 .avatar__img-container {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   overflow: hidden;
 
@@ -99,7 +100,7 @@
   padding: 10px 30px;
   gap: 18px;
   z-index: -1;
-  inset: -14px -30px;
+  inset: -19px -30px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   visibility: hidden;
@@ -143,12 +144,12 @@
   }
 
   .share__socials {
-    height: 40px;
+    height: 50px;
     width: 240px;
     z-index: 0;
     border-radius: 10px;
-    left: 63%;
-    top: -100%;
+    left: 62.5%;
+    top: calc(-100% - 30px);
     transition: all 0.25s ease;
     a {
       i {
