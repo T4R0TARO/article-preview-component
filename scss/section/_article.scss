@@ -6,7 +6,7 @@
   background-color: #fff;
   border-radius: 12px;
   max-width: 330px;
-  // box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.048);
 }
 
 .article__card__img-box {
@@ -89,6 +89,15 @@
   width: 35px;
   border-radius: 50%;
   background: $light-grayish-blue;
+}
+
+.share-button:hover {
+  color: $light-grayish-blue;
+  background: $grayish-blue;
+}
+
+.share__socials i:hover {
+  filter: invert(1);
 }
 
 .share__socials {
