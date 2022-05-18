@@ -20,50 +20,55 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    <article class="article__card">
-      <div class="article__card__img-box">
-        <img
-          src="./images/drawers.jpg"
-          alt="drawers with a vase and decorative picture frames"
-          class="article__card__img"
-        />
-      </div>
-      <div class="article__card__content">
-        <h1 class="card__content__h1">
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h1>
-        <p class="card__content__p">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I&apos;ve got some simple tips to
-          help you make any room feel complete.
-        </p>
-        <div class="article__card__footer">
-          <div class="avatar">
-            <div class="avatar__img-container">
-              <img src="./images/avatar-michelle.jpg" alt="michelle avatar" />
+    <main>
+      <article class="article__card">
+        <div class="article__card__img-box">
+          <img
+            src="./images/drawers.jpg"
+            alt="drawers with a vase and decorative picture frames"
+            class="article__card__img"
+          />
+        </div>
+        <div class="article__card__content">
+          <h1 class="card__content__h1">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="card__content__p">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I&apos;ve got some simple tips to
+            help you make any room feel complete.
+          </p>
+          <div class="article__card__footer">
+            <div class="avatar">
+              <div class="avatar__img-container">
+                <img src="./images/avatar-michelle.jpg" alt="michelle avatar" />
+              </div>
+              <div class="avatar__info">
+                <h2 class="avatar__info__h2">Michelle Appleton</h2>
+                <span class="avatar__info__date">28 Jun 2020</span>
+              </div>
             </div>
-            <div class="avatar__info">
-              <h2 class="avatar__info__h2">Michelle Appleton</h2>
-              <span class="avatar__info__date">28 Jun 2020</span>
-            </div>
-          </div>
 
-          <div class="share">
-            <button class="share-button">
-              <i class="fa-solid fa-share"></i>
-            </button>
-            <div class="share__socials">
-              <span class="share__title">Share</span>
-              <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            <div class="share">
+              <button
+                class="share-button"
+                type="button"
+                aria-label="open share menu"
+              >
+                <i class="fa-solid fa-share"></i>
+              </button>
+              <div class="share__socials">
+                <span class="share__title">Share</span>
+                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </article>
-
+      </article>
+    </main>
     <!-- JS -->
     <script src="./script.js"></script>
   </body>
