@@ -159,8 +159,7 @@ button {
   gap: 18px;
   z-index: -1;
   inset: -19px -30px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 0 0 10px 10px;
   visibility: hidden;
 }
 .share__socials a i {
@@ -189,10 +188,14 @@ button {
 
   .article__card__img-box {
     height: 100%;
+    width: 100%;
     overflow: hidden;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 0px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .article__card__img-box img {
+    object-fit: cover;
+    object-position: left;
   }
 
   .article__card__content {
